@@ -11,7 +11,7 @@ int main(void)
 	char str[] = "_putchar";
 	int i;
 
-	for (i = 0; (size_t) i < sizeof(str); ++i)
+	for (i = 0; (size_t) i < sizeof(str) - 1; i++)
 	{
 		char current = str[i];
 
