@@ -19,6 +19,6 @@ int multiples(void)
 			pro += i;
 		}
 	}
-	printf(pro);
+	printf("%d", pro);
 	return (pro);
 }
