@@ -19,6 +19,6 @@ int main(void)
 			pro += i;
 		}
 	}
-	printf("%d", pro);
-	return (pro);
+	printf("%d\n", pro);
+	return (0);
 }
