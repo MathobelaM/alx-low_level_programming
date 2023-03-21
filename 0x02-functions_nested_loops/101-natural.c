@@ -19,6 +19,6 @@ int multiples(void)
 			pro += i;
 		}
 	}
-	puts(pro);
+	printf(pro);
 	return (pro);
 }
