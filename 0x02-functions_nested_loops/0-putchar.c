@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  *main- print _putchar on stdout
  *followed by new line
@@ -7,7 +8,7 @@
 
 int main(void)
 {
-	char[] str = "_putchar";
+	char str[] = "_putchar";
 	int i;
 
 	for (i = 0; i < strlen(str); i++)
@@ -16,6 +17,6 @@ int main(void)
 
 		_putchar(current);
 	}
-	_putchar("\n");
+	_putchar('\n');
 	return (0);
 }
