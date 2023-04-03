@@ -1,24 +1,23 @@
 /**
- * _strncat - concatenates two strings.
+ * _strcat - concatenates two strings.
  *
  * @dest: input param
- * @src*: input param
+ * @src: input param
  *
- * Return: @dest
+ * Return: string
 */
 
-char *_strncat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
-	int c, i;
+	int i, j;
 
-	c = 0;
+	i = 0;
+	
+	while (dest[i])
+		i++;
 
-	while (dest[c])
-		c++;
-
-	for (i = 0; src[i] != '\0'; i++)
-		dest[c + i] = src[i];
-	dest[c + i] = '\0';
+	for (j = 0; src[j] ; j++)
+		dest[i++] = src[i];
 
 	return (dest);
 }
